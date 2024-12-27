@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Vidya College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #3e4a89;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        nav {
+            background-color: #2a3b69;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .courses {
+            margin-top: 30px;
+            text-align: left;
+            display: inline-block;
+            width: 80%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .courses h2 {
+            color: #2a3b69;
+        }
+
+        .courses ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .courses li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #3e4a89;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        .address {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        #address-only .address p {
+            color: white;
+        }
+
+        .location-link {
+            color: #f4a261;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .location-link:hover {
+            color: #a3d2ca;
+        }
+
+        .carousel {
+            position: relative;
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .carousel-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    </style>
+    <script src="carousel.js" defer></script>
+</head>
+<body>
+
+<header>
+    <img src="/mnt/data/IMG_20241223_180601948.jpg" alt="Sri Vidya College Logo">
+    <div>
+        <h1>Sri Vidya College</h1>
+        <p>Your Pathway to Excellence</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#courses">Courses Offered</a>
+    <a href="#address-only">Address</a>
+</nav>
+
+<div class="carousel">
+    <div class="carousel-images">
+        <img src="/mnt/data/WhatsApp Image 2024-12-23 at 18.47.17.jpeg" alt="Gallery Image 1">
+        <img src="/mnt/data/WhatsApp Image 2024-12-23 at 17.54.33.jpeg" alt="Gallery Image 2">
+    </div>
+    <div class="carousel-buttons">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+    </div>
+</div>
+
+<div class="main-content">
+    <section id="courses" class="courses">
+        <h2>Courses Offered</h2>
+        <ul>
+            <li><strong>MPC (Maths, Physics, Chemistry)</strong></li>
+            <li><strong>BIPC (Biology, Physics, Chemistry)</strong></li>
+            <li><strong>CEC (Civics, Economics, Commerce)</strong></li>
+            <li><strong>HEC (History, Economics, Civics)</strong></li>
+            <li><strong>Degree Courses</strong>
+                <ul>
+                    <li><strong>B.Sc. Hons:</strong> Computer Science, Chemistry, Botany, Zoology, Data Science</li>
+                    <li><strong>B.Com Hons:</strong> Computer Applications</li>
+                    <li><strong>B.A. Hons:</strong> Special Telugu</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="address-only" class="address">
+        <h2>Our Address</h2>
+        <p style="color: white">Sri Vidya College,</p>
+        <p style="color: white">Sharada Nagar 1st Line,</p>
+        <p style="color: white">Narsipatnam, Visakhapatnam - 531116</p>
+        <p style="color: white">(Beside Prathiba English Medium School)</p>
+        <p style="color: white">Phone: +919640561123</p>
+        <p style="color: white">Email: info@sri-vidya-college.com</p>
+        <p>
+            <a href="https://www.google.com/maps/dir/17.6646245,82.6126244/srividya+college+narsipatnam+offered/@17.6631205,82.6114761,830m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a3993afe45b9dfd:0x8f4cdcaee39baa57!2m2!1d82.6154699!2d17.6616482?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" class="location-link" target="_blank">View on Google Maps</a>
+        </p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Sri Vidya College. All rights reserved.</p>
+    <div class="address">
+        <p>Location: Sharada Nagar 1st Line, Narsipatnam, Visakhapatnam - 531116.</p>
+        <p><a href="https://www.google.com/maps/dir/17.6646245,82.6126244/srividya+college+narsipatnam+offered/@17.6631205,82.6114761,830m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a3993afe45b9dfd:0x8f4cdcaee39baa57!2m2!1d82.6154699!2d17.6616482?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" class="location-link" target="_blank">View on Google Maps</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
